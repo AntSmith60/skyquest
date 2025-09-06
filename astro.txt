@@ -1,0 +1,178 @@
+# SkyQuest
+astrophotography.transits.world:WORLD
+astrophotography.transits.Observatory:AFFORDANCE
+astrophotography.transits.main:BEHAVIOUR
+---
+---
+# Main Players
+## Time and Destiny
+astrophotography.aeonforge:THROUGHLINE
+astrophotography.aeonforge.Chronos:FIGURATION
+astrophotography.aeonforge.Kairos:AFFORDANCE
+---
+## Place and Knowledge
+astrophotography.transits.Tiphys:FIGURATION
+astrophotography.transits.Idmon:FIGURATION
+---
+## Master Scribe
+astrophotography.astraeus:THROUGHLINE
+---
+![Observatory, maped layout](observatory-map.png)
+---
+---
+# CHAPTER - Time and Destiny
+## What we know
+astrophotography.aeonforge.Chronos.__init__.self.chronogenesis:KNOWLEDGE
+astrophotography.aeonforge.Chronos.arche_date:KNOWLEDGE
+astrophotography.aeonforge.Chronos.arche_flux:BEHAVIOUR
+astrophotography.aeonforge.Chronos.__init__.self.moira:KNOWLEDGE
+astrophotography.aeonforge.Chronos.aion:KNOWLEDGE
+astrophotography.aeonforge.Chronos.aion_flux:BEHAVIOUR
+astrophotography.aeonforge.Chronos.eschatos:KNOWLEDGE
+astrophotography.aeonforge.Chronos.__init__.self.telos:MECHANISM
+astrophotography.aeonforge.Kairos.day_bands:KNOWLEDGE
+astrophotography.aeonforge.Kairos.local_tz:KNOWLEDGE
+astrophotography.aeonforge.Chronos._quest:IMPULSE
+---
+## Mechanics
+astrophotography.aeonforge.Kairos.divine_universal_time:MECHANISM
+astrophotography.aeonforge.Kairos.to_utc:MECHANISM
+astrophotography.aeonforge.Kairos.true_hour:MECHANISM
+astrophotography.aeonforge.Kairos.utc_hours_difference:MECHANISM
+astrophotography.aeonforge.Kairos.what_time_is_it:MECHANISM
+astrophotography.aeonforge.Chronos.__init__.self.chronogenesis.dateChanged.connect:IMPULSE
+astrophotography.aeonforge.Chronos.__init__.self.moira.valueChanged.connect:IMPULSE
+---
+---
+# CHAPTER - Divinations
+astrophotography.transits.Idmon.set_transit:BEHAVIOUR
+astrophotography.transits.Tiphys.__init__.self.targets:KNOWLEDGE
+astrophotography.transits.Tiphys.destination:MECHANISM
+astrophotography.transits.Tiphys.vantage:KNOWLEDGE
+astrophotography.transits.Tiphys.HomeBase:MECHANISM
+astrophotography.transits.Idmon.__init__.self.loader:KNOWLEDGE
+astrophotography.transits.Idmon.get_transit_arc:MECHANISM
+astrophotography.transits.Idmon.get_twilight_bands:MECHANISM
+---
+---
+# CHAPTER - Charting
+astrophotography.astraeus.Astraeus:FIGURATION
+astrophotography.artboard:THROUGHLINE
+astrophotography.inscriptions:THROUGHLINE
+astrophotography.parchment:THROUGHLINE
+---
+## The ArtBoard
+astrophotography.artboard.ArtBoard:AFFORDANCE
+### Inscription Tool Types
+astrophotography.artboard.ArtBoard.InscribeArc:MECHANISM
+astrophotography.artboard.ArtBoard.InscribeBackground:MECHANISM
+astrophotography.artboard.ArtBoard.InscribeGrid:MECHANISM
+astrophotography.artboard.ArtBoard.InscribeThreshold:MECHANISM
+### ArtBoard Layers
+astrophotography.artboard.Layer:AFFORDANCE
+astrophotography.artboard.ArtBoard.InscribeThreshold.ThresholdLayer:AFFORDANCE
+astrophotography.artboard.ArtBoard.AltitudeRange:AFFORDANCE
+### Supporting mechanisms
+astrophotography.artboard.ArtBoard.render_title:MECHANISM
+astrophotography.artboard.ArtBoard.wipe:MECHANISM
+astrophotography.artboard.ArtBoard.__init__:MECHANISM
+---
+## Inscriptions
+astrophotography.inscriptions.Inscriptions:AFFORDANCE
+### Inscribing
+astrophotography.inscriptions.Inscriptions.Inscribe:AFFORDANCE
+astrophotography.inscriptions.Inscriptions.Inscribe.add_inscription:MECHANISM
+astrophotography.inscriptions.Inscriptions.Inscribe.update_inscription:MECHANISM
+astrophotography.inscriptions.Inscriptions.Inscribe.draw_veil:SKILL
+astrophotography.inscriptions.Inscriptions.Inscribe.make_arc_inscription:MECHANISM
+astrophotography.inscriptions.Inscriptions.Inscribe.make_bg_inscription:MECHANISM
+astrophotography.inscriptions.Inscriptions.Inscribe.set_visibility:MECHANISM
+astrophotography.inscriptions.Inscriptions.Inscribe.toggle_visibility:MECHANISM
+---
+## Parchment
+astrophotography.parchment.Parchment:AFFORDANCE
+### Save and Restore
+astrophotography.parchment.Parchment.fresh_parchment:MECHANISM
+astrophotography.parchment.Parchment.restore_parchment:MECHANISM
+astrophotography.parchment.Parchment.clear_plots:MECHANISM
+astrophotography.parchment.ChartedElements:AFFORDANCE
+astrophotography.parchment.ChartedElements.save_geometry:MECHANISM
+astrophotography.parchment.ChartedElements.restore_geometry:MECHANISM
+astrophotography.parchment.ChartedElements.save_original_ax:MECHANISM
+astrophotography.parchment.ChartedElements.restore_original_ax:MECHANISM
+---
+### Making Marks
+astrophotography.parchment.InnerChartElements:AFFORDANCE
+astrophotography.parchment.InnerChartElements.inscription_visibility:SKILL
+#### For Transit Arcs
+astrophotography.parchment.InnerChartElements.add_lines:MECHANISM
+astrophotography.parchment.InnerChartElements.decay_line:MECHANISM
+astrophotography.parchment.InnerChartElements.extend_line:MECHANISM
+#### For the background
+astrophotography.parchment.InnerChartElements.add_block:MECHANISM
+astrophotography.parchment.InnerChartElements.set_block:SKILL
+astrophotography.parchment.InnerChartElements.shuffle_blocks:MECHANISM
+astrophotography.parchment.InnerChartElements.decay_blocks:MECHANISM
+#### Ancilliaries
+astrophotography.parchment.InnerChartElements.hguide:MECHANISM
+astrophotography.parchment.InnerChartElements.set_grid:MECHANISM
+astrophotography.parchment.Parchment.XAxis:AFFORDANCE
+astrophotography.parchment.Parchment.YAxis:AFFORDANCE
+astrophotography.parchment.Parchment.retitle:SKILL
+astrophotography.parchment.Parchment.redraw:SKILL
+---
+## Plots
+astrophotography.transits.Observatory.present_query:BEHAVIOUR
+astrophotography.astraeus.Astraeus.commence_presentation:MECHANISM
+astrophotography.astraeus.Astraeus.draw_day:BEHAVIOUR
+astrophotography.astraeus.Astraeus.draw_day_bands:MECHANISM
+astrophotography.astraeus.Astraeus.plot_arc_day:MECHANISM
+astrophotography.astraeus.Astraeus.complete_presentation:MECHANISM
+astrophotography.astraeus.Astraeus.__init__.arc_sets:KNOWLEDGE
+astrophotography.astraeus.Astraeus.__init__.self.greyscale:KNOWLEDGE
+astrophotography.astraeus.Astraeus.__init__.self.target_colours:KNOWLEDGE
+---
+---
+## Animations
+astrophotography.artboard.ArtBoard.do_animation:BEHAVIOUR
+astrophotography.artboard.ArtBoard.AnimationModeDialog:MECHANISM
+astrophotography.artboard.AnimationFilter:AFFORDANCE
+astrophotography.inscriptions.Inscriptions.animate:BEHAVIOUR
+astrophotography.inscriptions.Inscriptions.DayTracker:AFFORDANCE
+astrophotography.inscriptions.Inscriptions.DayTracker.more_days:DISPOSITION
+astrophotography.inscriptions.Inscriptions.DayTracker.step_day:MECHANISM
+astrophotography.inscriptions.Inscriptions.DayTracker.too_many_days:DISPOSITION
+astrophotography.inscriptions.Inscriptions.DayTracker.final_day:DISPOSITION
+astrophotography.inscriptions.Inscriptions.ArcLimiter:AFFORDANCE
+astrophotography.inscriptions.Inscriptions.ArcLimiter.expire:MECHANISM
+astrophotography.inscriptions.Inscriptions.ArcLimiter.extend:MECHANISM
+---
+---
+# APPENDIX: CONTINUUM
+astrophotography.continuum:THROUGHLINE
+## Standards
+astrophotography.continuum.sys:CONTINUUM
+astrophotography.continuum.collections:CONTINUUM
+astrophotography.continuum.math:CONTINUUM
+astrophotography.continuum.numpy:CONTINUUM
+astrophotography.continuum.gc:CONTINUUM
+astrophotography.continuum.time:CONTINUUM
+astrophotography.continuum.datetime:CONTINUUM
+astrophotography.continuum.zoneinfo:CONTINUUM
+---
+## Sources
+astrophotography.continuum.skyfield.api:CONTINUUM
+---
+## UI
+astrophotography.continuum.PyQt5.QtWidgets:CONTINUUM
+---
+## Plotting
+astrophotography.continuum.matplotlib.animation:CONTINUUM
+astrophotography.continuum.matplotlib.backends.backend_agg:CONTINUUM
+astrophotography.continuum.matplotlib.backends.backend_qt5agg:CONTINUUM
+astrophotography.continuum.matplotlib.collections:CONTINUUM
+astrophotography.continuum.matplotlib.colors:CONTINUUM
+astrophotography.continuum.matplotlib.figure:CONTINUUM
+astrophotography.continuum.matplotlib.font_manager:CONTINUUM
+astrophotography.continuum.matplotlib.patches:CONTINUUM
+astrophotography.continuum.matplotlib.pyplot:CONTINUUM

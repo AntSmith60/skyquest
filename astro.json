@@ -1,0 +1,746 @@
+{
+  "astrophotography.aeonforge": {
+    "category": "THROUGHLINE",
+    "canonical": "astrophotography.aeonforge",
+    "content": "Herein we steward time so that no-one else needs to worry about the vagueries of time management.\n\n\n\nJust like the ancient greeks did, we split our concept of time into the material itself (how much of it we have to work with) and the mechanics of it (the expressions of time).\n\n\n\nThere are 2 key underlying concepts that are woven throughout:\n\n- All days start at noon and last for exactly 24 hours. This places midnight at the center of our inquiries, since astronomers are implicitly night-owls. Also note, 24hrs from noon may or may not be noon on the following day, since we display local times along with the vagueries of daylight saving.\n\n- Days are divided into, at most, 9 bands of daytime, night-time, dawns and dusks (civil, nautical, astronomical). Never more than 9 (the sun only rises once per day).\n\n\n\nNote that we have imported QWidget from the continuum in its own (alien) metaphor. We allow that metaphor (of layouts, labels and fonts) to pervade here out of kindness to the sanity of others reading this module... but the underlying data concepts and exposures are within our chrono-mytho metaphor; as you will see.",
+    "reference": "(2, 0)"
+  },
+  "astrophotography.aeonforge.Chronos": {
+    "category": "FIGURATION",
+    "canonical": "astrophotography.aeonforge.Chronos",
+    "content": "As the personification of time itself, Chronos sets the temporal limits of an inquiry.",
+    "reference": "(15, 0)"
+  },
+  "astrophotography.aeonforge.Chronos.__init__.self.chronogenesis": {
+    "category": "KNOWLEDGE",
+    "canonical": "astrophotography.aeonforge.Chronos.__init__.self.chronogenesis",
+    "content": "the denoted start of time, allowing for the entry of a (niave) date",
+    "reference": "(35, 8)"
+  },
+  "astrophotography.aeonforge.Chronos.__init__.self.moira": {
+    "category": "KNOWLEDGE",
+    "canonical": "astrophotography.aeonforge.Chronos.__init__.self.moira",
+    "content": "the denoted destiny, the time alloted to us by the Fates (or Moirai) - as a simple integer",
+    "reference": "(47, 8)"
+  },
+  "astrophotography.aeonforge.Chronos.__init__.self.telos": {
+    "category": "MECHANISM",
+    "canonical": "astrophotography.aeonforge.Chronos.__init__.self.telos",
+    "content": "For the fulfillment of our destiny. The quest itself is governed by The Observatory, which provides it (via callaback) to Chronos so that time-flux based impulses can be satisifed.",
+    "reference": "(77, 8)"
+  },
+  "astrophotography.aeonforge.Chronos.__init__.self.moira.valueChanged.connect": {
+    "category": "IMPULSE",
+    "canonical": "astrophotography.aeonforge.Chronos.__init__.self.moira.valueChanged.connect",
+    "content": "If something changes our destiny (our alloted time) we attempt to fulfill it through quest",
+    "reference": "(86, 8)"
+  },
+  "astrophotography.aeonforge.Chronos.__init__.self.chronogenesis.dateChanged.connect": {
+    "category": "IMPULSE",
+    "canonical": "astrophotography.aeonforge.Chronos.__init__.self.chronogenesis.dateChanged.connect",
+    "content": "If a new aion begins then we  we attempt to fulfill our destiny through quest",
+    "reference": "(91, 8)"
+  },
+  "astrophotography.aeonforge.Chronos.arche_flux": {
+    "category": "BEHAVIOUR",
+    "canonical": "astrophotography.aeonforge.Chronos.arche_flux",
+    "content": "A change in the chronogenesis implicitly invokes a new aion, a new quest",
+    "reference": "(99, 4)"
+  },
+  "astrophotography.aeonforge.Chronos._quest": {
+    "category": "IMPULSE",
+    "canonical": "astrophotography.aeonforge.Chronos._quest",
+    "content": "Although we never directly see our destiny (it is elsewhere written in the stars) we can still reach it through quest; which is triggered by any change in time, or by The Observatory when a new query is presented.",
+    "reference": "(106, 4)"
+  },
+  "astrophotography.aeonforge.Chronos.arche_date": {
+    "category": "KNOWLEDGE",
+    "canonical": "astrophotography.aeonforge.Chronos.arche_date",
+    "content": "the exact dawn of time (the first date)",
+    "reference": "(114, 4)"
+  },
+  "astrophotography.aeonforge.Chronos.aion": {
+    "category": "KNOWLEDGE",
+    "canonical": "astrophotography.aeonforge.Chronos.aion",
+    "content": "our precise allotment of time",
+    "reference": "(119, 4)"
+  },
+  "astrophotography.aeonforge.Chronos.eschatos": {
+    "category": "KNOWLEDGE",
+    "canonical": "astrophotography.aeonforge.Chronos.eschatos",
+    "content": "the end of days",
+    "reference": "(124, 4)"
+  },
+  "astrophotography.aeonforge.Chronos.aion_flux": {
+    "category": "BEHAVIOUR",
+    "canonical": "astrophotography.aeonforge.Chronos.aion_flux",
+    "content": "A change in our destiny, our alloted time.",
+    "reference": "(129, 4)"
+  },
+  "astrophotography.aeonforge.Kairos": {
+    "category": "AFFORDANCE",
+    "canonical": "astrophotography.aeonforge.Kairos",
+    "content": "Regarding the nature of time, whilst Chronos concerns sequence, Kairos concerns moment.\n\nThrough the mechanics of Kairos we attain fundamental knowledge of moments such as 'what time is it, here'; 'what daylight band is it?'\n\n\n\nOne day Kairos will also understand the Vantage that Tiphys has set to better help us understand what time it is, although right now it always thinks we are in London!",
+    "reference": "(140, 0)"
+  },
+  "astrophotography.aeonforge.Kairos.local_tz": {
+    "category": "KNOWLEDGE",
+    "canonical": "astrophotography.aeonforge.Kairos.local_tz",
+    "content": "reference for local time",
+    "reference": "(148, 4)"
+  },
+  "astrophotography.aeonforge.Kairos.day_bands": {
+    "category": "KNOWLEDGE",
+    "canonical": "astrophotography.aeonforge.Kairos.day_bands",
+    "content": "meaning of oblique twilight band codes (as revealed by Idmon) - note that twilight covers both ends of the day (dawn and dusk)",
+    "reference": "(151, 4)"
+  },
+  "astrophotography.aeonforge.Kairos.divine_universal_time": {
+    "category": "MECHANISM",
+    "canonical": "astrophotography.aeonforge.Kairos.divine_universal_time",
+    "content": "provides the universal time for a given offset from noon of a given date.\n\nWe work from noon because midnight is always at the center of our focus.",
+    "reference": "(168, 4)"
+  },
+  "astrophotography.aeonforge.Kairos.true_hour": {
+    "category": "MECHANISM",
+    "canonical": "astrophotography.aeonforge.Kairos.true_hour",
+    "content": "provides the universal time for a given hour after noon on a given date\n\nAllows us to be agnostic to timezones and daylight saving concerns\n\nSlightly blunt since we only allow for hour-resolution, but that is all we ever use.",
+    "reference": "(180, 4)"
+  },
+  "astrophotography.aeonforge.Kairos.what_time_is_it": {
+    "category": "MECHANISM",
+    "canonical": "astrophotography.aeonforge.Kairos.what_time_is_it",
+    "content": "Tells us what time it is at a given time!\n\nWe can never really know what time it really is... because of daylight saving!\n\nSo this answers the question, what time is it 'x' hours after noon on 'date', where we are asking from.",
+    "reference": "(190, 4)"
+  },
+  "astrophotography.aeonforge.Kairos.utc_hours_difference": {
+    "category": "MECHANISM",
+    "canonical": "astrophotography.aeonforge.Kairos.utc_hours_difference",
+    "content": "Finds the (fractional) hours separation between two UTC times",
+    "reference": "(202, 4)"
+  },
+  "astrophotography.aeonforge.Kairos.to_utc": {
+    "category": "MECHANISM",
+    "canonical": "astrophotography.aeonforge.Kairos.to_utc",
+    "content": "Convert any (not niave) time to UTC, allowing for daylight saving\n\n(can also check that a time **is** UTC)",
+    "reference": "(212, 4)"
+  },
+  "astrophotography.artboard": {
+    "category": "THROUGHLINE",
+    "canonical": "astrophotography.artboard",
+    "content": "The ArtBoard is essentially a collection of inscription tools along with a scroll (of PARCHMENT).",
+    "reference": "(4, 0)"
+  },
+  "astrophotography.artboard.Layer": {
+    "category": "AFFORDANCE",
+    "canonical": "astrophotography.artboard.Layer",
+    "content": "The Inscription tools have an associated 'layer' which provides the UI elements of the tool. \n\nA basic layer provides a simple toggle that connects to the inscriptions's visibility control",
+    "reference": "(9, 0)"
+  },
+  "astrophotography.artboard.ArtBoard": {
+    "category": "AFFORDANCE",
+    "canonical": "astrophotography.artboard.ArtBoard",
+    "content": "The ArtBoard controls presentation layers - whether or not we want to see groups of things, and what we want them to look like.\n\nSo, for example, we can turn the display of the lunar arc on or off; or we can set the range of altitudes we want to see.\n\n\n\nOne day we will extend this to allow selection of ink colours for the plotted arcs.\n\n\n\nThe ArtBoard also lets us kick-off the animated reveal of the chart, providing us with the tools to control that.\n\n\n\nThe ArtBoard comprises sets of layers that can be toggled on or off, with each layer being provisioned the inscription tools needed to draw the layer.",
+    "reference": "(26, 0)"
+  },
+  "astrophotography.artboard.ArtBoard.AnimationModeDialog": {
+    "category": "MECHANISM",
+    "canonical": "astrophotography.artboard.ArtBoard.AnimationModeDialog",
+    "content": "Allows us to direct how the animation of a plot procedes - i.e. should each day accumulate in the plot, or should older days be erased as the animation procedes.",
+    "reference": "(38, 4)"
+  },
+  "astrophotography.artboard.ArtBoard.AltitudeRange": {
+    "category": "AFFORDANCE",
+    "canonical": "astrophotography.artboard.ArtBoard.AltitudeRange",
+    "content": "Extends a basic layer by also providing for a pair of values which are directly connected to the parchment's Y-axis",
+    "reference": "(69, 4)"
+  },
+  "astrophotography.artboard.ArtBoard.InscribeArc": {
+    "category": "MECHANISM",
+    "canonical": "astrophotography.artboard.ArtBoard.InscribeArc",
+    "content": "Extends the basic inscription tool so that (complex) arcs can be inscribed.\n\nThis tool adds one inscription for each arc to be displayed; we may have several arcs each day (e.g. all the planets) or we may end up with an arc for each of several days.\n\nWe create one such tool for each set of arcs we provide - i.e. 2 such tools: the lunar arcs and, the transit arcs.",
+    "reference": "(112, 4)"
+  },
+  "astrophotography.artboard.ArtBoard.InscribeBackground": {
+    "category": "MECHANISM",
+    "canonical": "astrophotography.artboard.ArtBoard.InscribeBackground",
+    "content": "Extends the basic inscription tool so that backgrounds can be inscribed.\n\nThis is slightly different to inscribing arcs because we have one background - we don't accumulate the background day by day; rather we shift what is already there. Thus, you will note that the actual inscriptions are generated statically and then **modified** - rather than adding new inscriptions as we progress",
+    "reference": "(127, 4)"
+  },
+  "astrophotography.artboard.ArtBoard.InscribeThreshold": {
+    "category": "MECHANISM",
+    "canonical": "astrophotography.artboard.ArtBoard.InscribeThreshold",
+    "content": "Extends the basic inscription tool so that a value can be accepted that inscribes a horizontal guide on the parchment. \n\nWe only allow for one guide, so the inscription is created statically when we forge the tool and is updated (via the UI) when desired. It is not an animated inscription.",
+    "reference": "(159, 4)"
+  },
+  "astrophotography.artboard.ArtBoard.InscribeThreshold.ThresholdLayer": {
+    "category": "AFFORDANCE",
+    "canonical": "astrophotography.artboard.ArtBoard.InscribeThreshold.ThresholdLayer",
+    "content": "Extends a basic layer by also providing UI for a threshold value",
+    "reference": "(172, 8)"
+  },
+  "astrophotography.artboard.ArtBoard.InscribeGrid": {
+    "category": "MECHANISM",
+    "canonical": "astrophotography.artboard.ArtBoard.InscribeGrid",
+    "content": "Extends the basic inscription tool so that we can control the parchment's grid display. Again, we never add further inscriptions to this tool (there is only 1 grid), and the grid itself is not animated.",
+    "reference": "(195, 4)"
+  },
+  "astrophotography.artboard.ArtBoard.__init__": {
+    "category": "MECHANISM",
+    "canonical": "astrophotography.artboard.ArtBoard.__init__",
+    "content": "Creates an ArtBoard with all of its complex tooling.\n\n-  a provided scroll is pinned to the artboard\n\n- It's part of the ArtBoard's duty to keep track of which day we're dealing with when we are plotting over multiple days. \n- UI components are added for the plot itself (the scroll PARCHMENT)\n- and for the animation utility\n- Specialised inscription tooling is added for the threshold indicator, the background, and the grid\n- then the inscription tooling and UI controls for each of the transit arcs are added. To keep the UI light the inscriptions are grouped into sets, with a UI control for each set: Background, Lunar arc, all (other) transit arcs",
+    "reference": "(215, 4)"
+  },
+  "astrophotography.artboard.ArtBoard.wipe": {
+    "category": "MECHANISM",
+    "canonical": "astrophotography.artboard.ArtBoard.wipe",
+    "content": "Cleans-up the ArtBoard when we are ready to start plotting a new presentation",
+    "reference": "(275, 4)"
+  },
+  "astrophotography.artboard.ArtBoard.render_title": {
+    "category": "MECHANISM",
+    "canonical": "astrophotography.artboard.ArtBoard.render_title",
+    "content": "Renders a title for the plot taking account of what is actually plotted (visible). \n\nNote that a reference to this method is provided to the inscriptions that effect the title - so the title is re-rendered when such inscriptions are turned on or off.",
+    "reference": "(288, 4)"
+  },
+  "astrophotography.artboard.ArtBoard.do_animation": {
+    "category": "BEHAVIOUR",
+    "canonical": "astrophotography.artboard.ArtBoard.do_animation",
+    "content": "Initiates an animation, allowing a video render to be produced also.",
+    "reference": "(333, 4)"
+  },
+  "astrophotography.artboard.AnimationFilter": {
+    "category": "AFFORDANCE",
+    "canonical": "astrophotography.artboard.AnimationFilter",
+    "content": "Records the state of the chart display before we start messing with it in order to present the animation; resetting the initial state when the animation completes.\n\nHaving remembered the original state of the chart display it can also answer the question 'is this part of the animation'? whilst the animation is running; So only those thongs visible when we asked for the animation are included in the animation.",
+    "reference": "(368, 0)"
+  },
+  "astrophotography.astraeus": {
+    "category": "THROUGHLINE",
+    "canonical": "astrophotography.astraeus",
+    "content": "There's quite a lot to do in terms of dislaying, animating and recording the plots that arise from the queries, so there are a number of layered concepts at play:\n\n- ASTREUS is the master-scribe that orchestrates everything to do with the plot visualisation.\n\n- He is equipped with an ARTBOARD (GUI) that allows visual elements to be turned on or of and provides:\n\n- INSCRIPTION tools for adding elements to the plot; where each tool provides for the animation of the added inscriptions\n\n- and whereby the inscriptions are laid down on a PARCHMENT for the final visualisation",
+    "reference": "(6, 0)"
+  },
+  "astrophotography.astraeus.Astraeus": {
+    "category": "FIGURATION",
+    "canonical": "astrophotography.astraeus.Astraeus",
+    "content": "Astraeus derives from the Greek word for 'star' and is said to be the father of the winds - so very much a key player in any astronomical quest.\n\nIn this quest he creates the charts that answer the queries presented in The Observatory, which calls for the presentation to be started/completed - and for the days of interest to be drawn-in.",
+    "reference": "(15, 0)"
+  },
+  "astrophotography.astraeus.Astraeus.__init__.self.greyscale": {
+    "category": "KNOWLEDGE",
+    "canonical": "astrophotography.astraeus.Astraeus.__init__.self.greyscale",
+    "content": "a look-up table that lets us plot the moon's arc relative to its illumination",
+    "reference": "(22, 8)"
+  },
+  "astrophotography.astraeus.Astraeus.__init__.arc_sets": {
+    "category": "KNOWLEDGE",
+    "canonical": "astrophotography.astraeus.Astraeus.__init__.arc_sets",
+    "content": "we always allow for the lunar arc, plus 1 or more celsatial bodies",
+    "reference": "(27, 8)"
+  },
+  "astrophotography.astraeus.Astraeus.__init__.self.target_colours": {
+    "category": "KNOWLEDGE",
+    "canonical": "astrophotography.astraeus.Astraeus.__init__.self.target_colours",
+    "content": "the colours we use to plot celestial arcs. Fixed here but one will be managed by the ArtBoard",
+    "reference": "(34, 8)"
+  },
+  "astrophotography.astraeus.Astraeus.commence_presentation": {
+    "category": "MECHANISM",
+    "canonical": "astrophotography.astraeus.Astraeus.commence_presentation",
+    "content": "Sets-up the ArtBoard with a fresh parchment for the new plot (clearing any animation)",
+    "reference": "(45, 4)"
+  },
+  "astrophotography.astraeus.Astraeus.draw_day": {
+    "category": "BEHAVIOUR",
+    "canonical": "astrophotography.astraeus.Astraeus.draw_day",
+    "content": "Draws the entire plot for a single day: the background day bands, each transit arc, the title and the axes.\n\nThe title includes the (overall) day range and so needs updating for each plotted day, as does the x-axis as the time-of-day hour labels change when we have daylight saving.",
+    "reference": "(58, 4)"
+  },
+  "astrophotography.astraeus.Astraeus.draw_day_bands": {
+    "category": "MECHANISM",
+    "canonical": "astrophotography.astraeus.Astraeus.draw_day_bands",
+    "content": "Adds the day/twilight colour-bands to the inscriptions",
+    "reference": "(118, 4)"
+  },
+  "astrophotography.astraeus.Astraeus.plot_arc_day": {
+    "category": "MECHANISM",
+    "canonical": "astrophotography.astraeus.Astraeus.plot_arc_day",
+    "content": "Adds (all) the transit arcs to the inscriptions for a given day",
+    "reference": "(133, 4)"
+  },
+  "astrophotography.astraeus.Astraeus.complete_presentation": {
+    "category": "MECHANISM",
+    "canonical": "astrophotography.astraeus.Astraeus.complete_presentation",
+    "content": "Finalises a presentation by adding the threshold inscription and calling on the ArtBoard's draw_veil methods to set what is (or isn't) visible. Thereafter calling on the parchment to do the draw.",
+    "reference": "(160, 4)"
+  },
+  "astrophotography.continuum": {
+    "category": "THROUGHLINE",
+    "canonical": "astrophotography.continuum",
+    "content": "Defines foundational imports and truths upon which the drama unfolds.\n\n\n\nAll our modules perform 'import *' from the continuum.\n\nIn a larger app we would split this into separate modules, and then use __init__.py to 'import *' from the core section only, with individual user modules then importing all from the extensions.\n\n\n\nbut it is kept simple for now, albeit less scalable.\n\n\n\nNOTE:: This is THE CONTINUUM, it only hosts the external world and NEVER includes imports of app-local modules!\n\n\n\nI know, its unusual to promote the use of 'import *' (and you may well hate the idea) but exactly what gets imported is somewhat restricted to exactly what we use and this appproach gives us a single point of truth with regards our reliance on the wider world..!",
+    "reference": "(2, 0)"
+  },
+  "astrophotography.continuum.sys": {
+    "category": "CONTINUUM",
+    "canonical": "astrophotography.continuum.sys",
+    "content": "we use the standard sys module to get CLI arguments and issue exit codes.",
+    "reference": "(17, 0)"
+  },
+  "astrophotography.continuum.gc": {
+    "category": "CONTINUUM",
+    "canonical": "astrophotography.continuum.gc",
+    "content": "at the end of an animation we have a lot of matplotlib objects to clean-up, at which point we perform an explicit garbage collection. Not really something we should HAVE to do, but, well - matplotlib...",
+    "reference": "(19, 0)"
+  },
+  "astrophotography.continuum.time": {
+    "category": "CONTINUUM",
+    "canonical": "astrophotography.continuum.time",
+    "content": "The standard time module provides 'sleep', for when we want to pace an interactive animation",
+    "reference": "(21, 0)"
+  },
+  "astrophotography.continuum.math": {
+    "category": "CONTINUUM",
+    "canonical": "astrophotography.continuum.math",
+    "content": "The standard math module provides 'ceil', which helps to chunk time into 1 hour bands",
+    "reference": "(23, 0)"
+  },
+  "astrophotography.continuum.numpy": {
+    "category": "CONTINUUM",
+    "canonical": "astrophotography.continuum.numpy",
+    "content": "The NUMPY module is used a convenience to create small sequences, when needed - there no serious vectorised operations in this app",
+    "reference": "(25, 0)"
+  },
+  "astrophotography.continuum.collections": {
+    "category": "CONTINUUM",
+    "canonical": "astrophotography.continuum.collections",
+    "content": "we use the convenience of the defaultdict to ensure we can always index every hour of every day in a given day range, since conceptually those indices are always valid (days always have 24 hours!) - even if we don't happen to have any data for a given time.",
+    "reference": "(27, 0)"
+  },
+  "astrophotography.continuum.datetime": {
+    "category": "CONTINUUM",
+    "canonical": "astrophotography.continuum.datetime",
+    "content": "Dates and times pervade in this application, but you can pretty much always expect them to be standard datetime objects - EXCEPT where Idmon needs to work in Julian dates, but that's a complexity he keeps to himselff...",
+    "reference": "(31, 0)"
+  },
+  "astrophotography.continuum.zoneinfo": {
+    "category": "CONTINUUM",
+    "canonical": "astrophotography.continuum.zoneinfo",
+    "content": "when we add contextual time to a (naive) input date we do so as UTC, then convert to local time as needed (e.g. when display time axes); in general we can expect our datetime objects to be UTC",
+    "reference": "(36, 0)"
+  },
+  "astrophotography.continuum.skyfield.api": {
+    "category": "CONTINUUM",
+    "canonical": "astrophotography.continuum.skyfield.api",
+    "content": "All of our astronomical knowledge is drawn from skyfield, based on data downloads in './skyfield-data'",
+    "reference": "(42, 0)"
+  },
+  "astrophotography.continuum.PyQt5.QtWidgets": {
+    "category": "CONTINUUM",
+    "canonical": "astrophotography.continuum.PyQt5.QtWidgets",
+    "content": "All GUI  is provided by PyQt5",
+    "reference": "(56, 0)"
+  },
+  "astrophotography.continuum.matplotlib.backends.backend_qt5agg": {
+    "category": "CONTINUUM",
+    "canonical": "astrophotography.continuum.matplotlib.backends.backend_qt5agg",
+    "content": "provides the interactive (on-screen) chart visualisation, in concert with GUI (PyQt5)",
+    "reference": "(92, 0)"
+  },
+  "astrophotography.continuum.matplotlib.backends.backend_agg": {
+    "category": "CONTINUUM",
+    "canonical": "astrophotography.continuum.matplotlib.backends.backend_agg",
+    "content": "provides the chart visualisation when recording video frames",
+    "reference": "(96, 0)"
+  },
+  "astrophotography.continuum.matplotlib.animation": {
+    "category": "CONTINUUM",
+    "canonical": "astrophotography.continuum.matplotlib.animation",
+    "content": "provides the (FFMPEG) video writer",
+    "reference": "(102, 0)"
+  },
+  "astrophotography.continuum.matplotlib.pyplot": {
+    "category": "CONTINUUM",
+    "canonical": "astrophotography.continuum.matplotlib.pyplot",
+    "content": "only required when we come to release canvas memory",
+    "reference": "(104, 0)"
+  },
+  "astrophotography.continuum.matplotlib.figure": {
+    "category": "CONTINUUM",
+    "canonical": "astrophotography.continuum.matplotlib.figure",
+    "content": "lets us add figures to a canvas - we only ever work with 1 figure, but nevertheless matplot lib treats a canvas as containing a set of figures.",
+    "reference": "(107, 0)"
+  },
+  "astrophotography.continuum.matplotlib.collections": {
+    "category": "CONTINUUM",
+    "canonical": "astrophotography.continuum.matplotlib.collections",
+    "content": "All of our actual plotted arcs are created as line collections, which helps when we want to animate the chart",
+    "reference": "(111, 0)"
+  },
+  "astrophotography.continuum.matplotlib.patches": {
+    "category": "CONTINUUM",
+    "canonical": "astrophotography.continuum.matplotlib.patches",
+    "content": "the background visualisation of daylight/twilight bands is achieved by adding rectangles (behind the transit arcs) as so-called patches.",
+    "reference": "(115, 0)"
+  },
+  "astrophotography.continuum.matplotlib.font_manager": {
+    "category": "CONTINUUM",
+    "canonical": "astrophotography.continuum.matplotlib.font_manager",
+    "content": "we use a single font family, but at a variety of sizes",
+    "reference": "(119, 0)"
+  },
+  "astrophotography.continuum.matplotlib.colors": {
+    "category": "CONTINUUM",
+    "canonical": "astrophotography.continuum.matplotlib.colors",
+    "content": "we use colours with transparency when plotting the transit arcs, inversely relative to the moon illumination (which makes celestial objects less visible!).",
+    "reference": "(123, 0)"
+  },
+  "astrophotography.inscriptions": {
+    "category": "THROUGHLINE",
+    "canonical": "astrophotography.inscriptions",
+    "content": "Inscriptions are chart elements that:\n\n- contain a 'veil', a collection of marks on the parchment\n\n- provide (UI) tooling to draw or hide the veil (or otherwise effect its apppearance)\n\n- maintains the animation sequence for the veil's marks\n\n- provides the means to execute the animation sequence",
+    "reference": "(2, 0)"
+  },
+  "astrophotography.inscriptions.Inscriptions": {
+    "category": "AFFORDANCE",
+    "canonical": "astrophotography.inscriptions.Inscriptions",
+    "content": "Inscriptions add 'stuff' to the presentation which can then be shown on the parchment. either as a complete charted element, or as an animated sequencce.\n\n\n\nThey work with the PARCHMENT to make this stuff visible, but the main concern of an inscription is to granularise the inscribed 'thing' so that it can be revealed step-by-step when an animation is requested.\n\n\n\nThe main affordance describes what an inscription IS and provides the main animation logic",
+    "reference": "(11, 0)"
+  },
+  "astrophotography.inscriptions.Inscriptions.Inscribe": {
+    "category": "AFFORDANCE",
+    "canonical": "astrophotography.inscriptions.Inscriptions.Inscribe",
+    "content": "Inscriptions are sets of marks that can be made on a parchment.\n\nThe full set lives in the 'veil' which may or may not be drawn at any given point (determined by the inscription's visible state)\n\nThat's all there is to it for simple inscriptions like the grid or the guides.\n\n\n\nMore complex (or compound) inscriptions like transit arcs and the background are also created as animateable groups - i.e. per-hour per-day segments. Unlike the veil (which is completely on or off) these can be revealed step-by-step (when we animate). \n\n\n\nEffectively the inscriptions provides 2 views on the same displayable 'thing': the entire thing (line or background) turned on or off as a whole, and; a segmented version turned on or off on an hour-by-hour basis.",
+    "reference": "(20, 4)"
+  },
+  "astrophotography.inscriptions.Inscriptions.Inscribe.add_inscription": {
+    "category": "MECHANISM",
+    "canonical": "astrophotography.inscriptions.Inscriptions.Inscribe.add_inscription",
+    "content": "Adds a set of marks to the inscription's veil (the overall view of the chart)",
+    "reference": "(39, 8)"
+  },
+  "astrophotography.inscriptions.Inscriptions.Inscribe.update_inscription": {
+    "category": "MECHANISM",
+    "canonical": "astrophotography.inscriptions.Inscriptions.Inscribe.update_inscription",
+    "content": "Updates previous inscriptions, but only in a simple well-defined way; i.e. when we know exactly what we are dealing with. So we may change the value of an existing guideline, or the extent of a known background band.",
+    "reference": "(47, 8)"
+  },
+  "astrophotography.inscriptions.Inscriptions.Inscribe.make_arc_inscription": {
+    "category": "MECHANISM",
+    "canonical": "astrophotography.inscriptions.Inscriptions.Inscribe.make_arc_inscription",
+    "content": "Adds segemented lines to the animation view, returning an inscription set that can then also be added to the veil - i.e. presumes the data is already suitably segmented (by the hour), which it will be when it comes to transit arcs that are derived on an hourly basis.",
+    "reference": "(54, 8)"
+  },
+  "astrophotography.inscriptions.Inscriptions.Inscribe.make_bg_inscription": {
+    "category": "MECHANISM",
+    "canonical": "astrophotography.inscriptions.Inscriptions.Inscribe.make_bg_inscription",
+    "content": "Creates the animation steps for the background. These either grow the day bands from nothing to full width (day zero) or else shuffles the boundary between the day bands (on subsequent days).\n\nNote that the inscriptions themselves are already added, here we create the animation steps that adjust them.",
+    "reference": "(84, 8)"
+  },
+  "astrophotography.inscriptions.Inscriptions.Inscribe.set_visibility": {
+    "category": "MECHANISM",
+    "canonical": "astrophotography.inscriptions.Inscriptions.Inscribe.set_visibility",
+    "content": "Shows or hides the inscription's veil, updating the overall plot title if needed",
+    "reference": "(130, 8)"
+  },
+  "astrophotography.inscriptions.Inscriptions.Inscribe.toggle_visibility": {
+    "category": "MECHANISM",
+    "canonical": "astrophotography.inscriptions.Inscriptions.Inscribe.toggle_visibility",
+    "content": "For the UI which operates in terms of toggle rather than absolute state",
+    "reference": "(142, 8)"
+  },
+  "astrophotography.inscriptions.Inscriptions.Inscribe.draw_veil": {
+    "category": "SKILL",
+    "canonical": "astrophotography.inscriptions.Inscriptions.Inscribe.draw_veil",
+    "content": "Directs the parchment to make or erase the marks of this veil (i.e avoids direct low-level calls into matplotlib at this point)",
+    "reference": "(149, 8)"
+  },
+  "astrophotography.inscriptions.Inscriptions.DayTracker": {
+    "category": "AFFORDANCE",
+    "canonical": "astrophotography.inscriptions.Inscriptions.DayTracker",
+    "content": "Keeps track of the days during an animation, providing the key mechanisms for a controlled unwind at the end of the animated day range (if needed)",
+    "reference": "(164, 4)"
+  },
+  "astrophotography.inscriptions.Inscriptions.DayTracker.step_day": {
+    "category": "MECHANISM",
+    "canonical": "astrophotography.inscriptions.Inscriptions.DayTracker.step_day",
+    "content": "Keeps track of days both through the day-range of the animation, and through the unwind period atthe end off an animation",
+    "reference": "(177, 8)"
+  },
+  "astrophotography.inscriptions.Inscriptions.DayTracker.more_days": {
+    "category": "DISPOSITION",
+    "canonical": "astrophotography.inscriptions.Inscriptions.DayTracker.more_days",
+    "content": "A simple yes or no to the question 'are there more days to present': whether those days are the main animation, or days in the unwind period.",
+    "reference": "(188, 8)"
+  },
+  "astrophotography.inscriptions.Inscriptions.DayTracker.too_many_days": {
+    "category": "DISPOSITION",
+    "canonical": "astrophotography.inscriptions.Inscriptions.DayTracker.too_many_days",
+    "content": "Indicates if we ought to be erasing earlier arcs from teh plot as the animation procedes.",
+    "reference": "(196, 8)"
+  },
+  "astrophotography.inscriptions.Inscriptions.DayTracker.final_day": {
+    "category": "DISPOSITION",
+    "canonical": "astrophotography.inscriptions.Inscriptions.DayTracker.final_day",
+    "content": "Indicates if this is the final day of the end of days",
+    "reference": "(204, 8)"
+  },
+  "astrophotography.inscriptions.Inscriptions.ArcLimiter": {
+    "category": "AFFORDANCE",
+    "canonical": "astrophotography.inscriptions.Inscriptions.ArcLimiter",
+    "content": "An intermediary between the animator and the PARCHMENT.\n\nCollects references to the marks that are made so they can be progressively removed later if required.",
+    "reference": "(212, 4)"
+  },
+  "astrophotography.inscriptions.Inscriptions.ArcLimiter.expire": {
+    "category": "MECHANISM",
+    "canonical": "astrophotography.inscriptions.Inscriptions.ArcLimiter.expire",
+    "content": "Removes all of the marks made in the (current) oldest hour of the animated chart",
+    "reference": "(226, 8)"
+  },
+  "astrophotography.inscriptions.Inscriptions.ArcLimiter.extend": {
+    "category": "MECHANISM",
+    "canonical": "astrophotography.inscriptions.Inscriptions.ArcLimiter.extend",
+    "content": "Adds the animated marks to the PARCHMENT, remembering all the marks made in the given hour so they can later be expired.",
+    "reference": "(238, 8)"
+  },
+  "astrophotography.inscriptions.Inscriptions.animate": {
+    "category": "BEHAVIOUR",
+    "canonical": "astrophotography.inscriptions.Inscriptions.animate",
+    "content": "Executes the animation of the current (complete) plot.\n\n-  Remember what was visible before the animation so we can restore that state later. Then turn all the veils of so we have a blank slate for the animation to begin.\n\n- animate by day...\n- ... by hour...\n- ...by step...\n- only animate that which was visible\n- remove any expired line segments / collections\n- if we are currently unwinding the animation, just get on with it, no need to look for any steps that might want adding\n- otherwise perform the animated steps, which includes:\n    - update title (specifically so the date range is accurate)\n    - update x-axis ticks, which change on daylight saving days\n    - add the transit arcs for the hour\n    - grow the day bands as the animation procedes. So on day 1 we see the daybands expand from nothing\n    - shuffle the day bands on subsequent days\n- At the end of each hour now...\n- on the final day of the unwind, erase the background and the x-tick labels (since time is evapourating..!) on an hour-by-hour basis\n- display/record the animation of this hour\n- at the end of day, step to the next day, if there is one",
+    "reference": "(252, 4)"
+  },
+  "astrophotography.parchment": {
+    "category": "THROUGHLINE",
+    "canonical": "astrophotography.parchment",
+    "content": "The Parchment is where we actually (finally!) get to see stuff. It is powered by (and totally encapsulates our use of) matplotlib.\n\nIt contains those visible elements that are not a part of the SkyQuest query per se - i.e. the chart title and axis.\n\nIt allows for fresh parchments to be laid down, and old parchments to be recalled as we create new queries, or switch between displaying charts and animating charts.\n\n \n\nThe parchment is supported by further affordances that handle our ability to restore old parhcments, and also for the actual mark-making.",
+    "reference": "(2, 0)"
+  },
+  "astrophotography.parchment.ChartedElements": {
+    "category": "AFFORDANCE",
+    "canonical": "astrophotography.parchment.ChartedElements",
+    "content": "Simply stores or recalls all elements of a chart - lets us restore the parchment if we wipe it in order to present the animated version; manages both content and format.",
+    "reference": "(11, 0)"
+  },
+  "astrophotography.parchment.ChartedElements.save_geometry": {
+    "category": "MECHANISM",
+    "canonical": "astrophotography.parchment.ChartedElements.save_geometry",
+    "content": "Saves the format (geometry) of the parchment, in case we need to change it for video output",
+    "reference": "(23, 4)"
+  },
+  "astrophotography.parchment.ChartedElements.restore_geometry": {
+    "category": "MECHANISM",
+    "canonical": "astrophotography.parchment.ChartedElements.restore_geometry",
+    "content": "Restores the format (geometry) of the parchment",
+    "reference": "(31, 4)"
+  },
+  "astrophotography.parchment.ChartedElements.save_original_ax": {
+    "category": "MECHANISM",
+    "canonical": "astrophotography.parchment.ChartedElements.save_original_ax",
+    "content": "Saves the chart content in case we need to clear the parchment for the animation\n\nThis includes:\n\n- the line collections of the transit arcs, which get removed so they can be added piece-by-piece in the animation\n\n- the visible extent of the background daybands, which don't get removed but do get resized by the animation\n\n- x-axis ticks, which might be blanked at the end of an animation\n\n- the chart title. To be honest this ought to be right when an animation ends, but it will have been twiddled with so might as well save the original along with the foregoing",
+    "reference": "(40, 4)"
+  },
+  "astrophotography.parchment.ChartedElements.restore_original_ax": {
+    "category": "MECHANISM",
+    "canonical": "astrophotography.parchment.ChartedElements.restore_original_ax",
+    "content": "Simply reverses the original save",
+    "reference": "(65, 4)"
+  },
+  "astrophotography.parchment.InnerChartElements": {
+    "category": "AFFORDANCE",
+    "canonical": "astrophotography.parchment.InnerChartElements",
+    "content": "By 'inner' we mean the actual plot area of the chart, so that's the data we plot, the background elements, any guide lines and the grid. \n\nLets us add/change/remove and show/hide such elements.",
+    "reference": "(81, 0)"
+  },
+  "astrophotography.parchment.InnerChartElements.hguide": {
+    "category": "MECHANISM",
+    "canonical": "astrophotography.parchment.InnerChartElements.hguide",
+    "content": "Inscribe a horizontal guide on the parchment, or modify its position if it has already been inscribed.",
+    "reference": "(90, 4)"
+  },
+  "astrophotography.parchment.InnerChartElements.inscription_visibility": {
+    "category": "SKILL",
+    "canonical": "astrophotography.parchment.InnerChartElements.inscription_visibility",
+    "content": "Turns all marks of an inscription on or off",
+    "reference": "(107, 4)"
+  },
+  "astrophotography.parchment.InnerChartElements.set_grid": {
+    "category": "MECHANISM",
+    "canonical": "astrophotography.parchment.InnerChartElements.set_grid",
+    "content": "Establish the look of the grid (when it is visible) or else sets the grid invisaible",
+    "reference": "(116, 4)"
+  },
+  "astrophotography.parchment.InnerChartElements.add_lines": {
+    "category": "MECHANISM",
+    "canonical": "astrophotography.parchment.InnerChartElements.add_lines",
+    "content": "Adds the lines of a transit arc as a line collection.\n\nFor the main plot this will be many segments of a full-day arc.\n\nDuring animation, this will be the first hour's segments only",
+    "reference": "(128, 4)"
+  },
+  "astrophotography.parchment.InnerChartElements.extend_line": {
+    "category": "MECHANISM",
+    "canonical": "astrophotography.parchment.InnerChartElements.extend_line",
+    "content": "Specifically for the animation, extends an arc's previous line collection with a new hour's segment",
+    "reference": "(142, 4)"
+  },
+  "astrophotography.parchment.InnerChartElements.decay_line": {
+    "category": "MECHANISM",
+    "canonical": "astrophotography.parchment.InnerChartElements.decay_line",
+    "content": "Shrinks a line collection from its earliest point, until it is sooo short it is no longer a collection of lines (whereupon it is removed completely)!",
+    "reference": "(166, 4)"
+  },
+  "astrophotography.parchment.InnerChartElements.add_block": {
+    "category": "MECHANISM",
+    "canonical": "astrophotography.parchment.InnerChartElements.add_block",
+    "content": "Adds a block (rectangle) to the parchment",
+    "reference": "(185, 4)"
+  },
+  "astrophotography.parchment.InnerChartElements.set_block": {
+    "category": "SKILL",
+    "canonical": "astrophotography.parchment.InnerChartElements.set_block",
+    "content": "Updates the position and extent of a block on the parchment",
+    "reference": "(203, 4)"
+  },
+  "astrophotography.parchment.InnerChartElements.shuffle_blocks": {
+    "category": "MECHANISM",
+    "canonical": "astrophotography.parchment.InnerChartElements.shuffle_blocks",
+    "content": "Shuffles blocks: i.e. shifts the end point of one block and the start point of its (right-hand) neighbour; juggling the widths as needed. This lets us see the bands grown and shrink as the days pass by.",
+    "reference": "(212, 4)"
+  },
+  "astrophotography.parchment.InnerChartElements.decay_blocks": {
+    "category": "MECHANISM",
+    "canonical": "astrophotography.parchment.InnerChartElements.decay_blocks",
+    "content": "Shrinks background blocks from the left, specifically during the wind-down of an animation",
+    "reference": "(230, 4)"
+  },
+  "astrophotography.parchment.Parchment": {
+    "category": "AFFORDANCE",
+    "canonical": "astrophotography.parchment.Parchment",
+    "content": "The parchment sets the overall look and feel of a chart, it orchestrates the ChartedElements and provides for video records. It is the visualisation of the chart.",
+    "reference": "(254, 0)"
+  },
+  "astrophotography.parchment.Parchment.YAxis": {
+    "category": "AFFORDANCE",
+    "canonical": "astrophotography.parchment.Parchment.YAxis",
+    "content": "Presents the y-axis and handles changes to its range",
+    "reference": "(265, 4)"
+  },
+  "astrophotography.parchment.Parchment.XAxis": {
+    "category": "AFFORDANCE",
+    "canonical": "astrophotography.parchment.Parchment.XAxis",
+    "content": "Presents the x-axis and handles changes to its tick labels",
+    "reference": "(293, 4)"
+  },
+  "astrophotography.parchment.Parchment.retitle": {
+    "category": "SKILL",
+    "canonical": "astrophotography.parchment.Parchment.retitle",
+    "content": "Renders a new title for the chart",
+    "reference": "(369, 4)"
+  },
+  "astrophotography.parchment.Parchment.fresh_parchment": {
+    "category": "MECHANISM",
+    "canonical": "astrophotography.parchment.Parchment.fresh_parchment",
+    "content": "Saves the format and content of the current parchment, before clearing it for fresh duty.\n\nChanges the parchment format if we are writing a video file (to HD geometry)",
+    "reference": "(376, 4)"
+  },
+  "astrophotography.parchment.Parchment.clear_plots": {
+    "category": "MECHANISM",
+    "canonical": "astrophotography.parchment.Parchment.clear_plots",
+    "content": "Clears any existing chart content that a new query will influence.\n\nI.e. remove line collectioons and super-slim background blocks (to a width of 0)",
+    "reference": "(400, 4)"
+  },
+  "astrophotography.parchment.Parchment.restore_parchment": {
+    "category": "MECHANISM",
+    "canonical": "astrophotography.parchment.Parchment.restore_parchment",
+    "content": "Signs-off the current parchment (closing the video file if we had it open) before clearing and restoring whatever went before.",
+    "reference": "(417, 4)"
+  },
+  "astrophotography.parchment.Parchment.redraw": {
+    "category": "SKILL",
+    "canonical": "astrophotography.parchment.Parchment.redraw",
+    "content": "Ensures everything actually gets rendered.",
+    "reference": "(432, 4)"
+  },
+  "astrophotography.transits.world": {
+    "category": "WORLD",
+    "canonical": "astrophotography.transits.world",
+    "content": "This is the entry script fot the SkyQuest app.\n\n\n\nSkyQuest shows the astronomical info regarding the observability of celestial bodies from a given earth-bound observation point;  you'll need to look elsewhere (perhaps out of the window) for metereological impact.\n\n\n\n![SkyQuest, screenshot](skyquest-screenshot.png)\n\n\n\nIt provdes a 24-hour daily view of how selected bodies transit across the skyline from the chosen vantage point. Multiple daily views can be stacked. The x-axis shows the local time of day, sensitive to daylight saving time. When showing multiple days, the x-axis reflects the last day drawn. The y-axis sets the plotted altitude range.\n\n\n\nDaylight bands can also be shown which segment the day (through coloured background blocks) between day and night, along with the various periods of twilight and dawn (civil, nautical and astronmical) - which is again true to the last day plotted.\n\n\n\nCelestial bodies can be selected for the plot, with the lunar arc, also, always available. The lunar arc is plotted in grey, at a brightness dictated by the moon-illumination on each plotted hour. The transit arcs of chosen objects are plotted with a degree of transparency dictated by the moon-illumination - i.e indicating how visible such onjects _may_ be (of course that's also a question of altitude and weather)\n\n\n\nIt is therefore possible to see the optimum time to observe specific objects in the night sky with regards daylight level, moon-illumination and altitude - for one or more days; from anywhere in the world. The current dataset (from skyfield) is good to just before John Lennon's 113th birthday; so that'll need an update at some point...\n\n\n\nOnce a plot has been created, it can be animated. Basically this clears the chart and re-draws it on an hour-by-hour and day-by-day basis; optionally generating a video file. SkyQuest maintains 2 views on the data: that which renders the overall plot in its entirety, and; that which renders the plot as a sequenced animation. This supports fast visibility toggling of aspects of the plot (e.g. turning the lunar arc on or off), and also allows those aspects to be excluded from the (reccorded) animation. The animation can proceed either:\n\n- To the full accccumulation of the plot, or\n\n- as a sliding time window across the full day-range of the plot; e.g. to show a full monthly cycle changing across a year\n\n\n\nSkyQuest is well aware of just what it IS. There are a number of founding principals woven inherently into the source-code. You might want to argue that I should have been more absract in my modelling, to make the code more (re)useful; I'd counter, you know, life is finite.  Anyways, so we are clear:\n\n\n\n- SkyQuest shows a (possibly stacked) day-by-day view, with a 'day' being the 24h hour period that follows noon on a given date.\n\n- Altitudes (and illumation) of objects are plotted to an hourly resolution.\n\n- Events (sunrise, onset of astronomical twilight, etc...) are plotted to a minute resolution.\n\n- There are 9 such events in a day\n\n- Video is output in HD resolution at 50fps - i.e. at a rate of 2 full animated days per second.\n\n\n\nIn-code, SkyQuest is presented as a cast of ancient greek mythological figures and concepts. Time is presented as both its fundamental material (Chronos) and its working mechanics (Kairos) with some influence of the fates (Moirai) also. Tiphys (helmsman of the Argonauts) provides the navigational support by caring for our home base vantage and our destination (selected celestial bodies). Idmon (the Argonaut's seer) connects us with our almanacs (from skyfield). Astreus (a Greek god of astrology) visualises Idmon's prophecies, through a rich collection of artboard, inscription tools, and parchment.",
+    "reference": "(3, 0)"
+  },
+  "astrophotography.transits.Tiphys": {
+    "category": "FIGURATION",
+    "canonical": "astrophotography.transits.Tiphys",
+    "content": "Tiphys was the Argonaut's navigator, and here takes care of location based concepts - i.e where we are and where we are going.",
+    "reference": "(39, 0)"
+  },
+  "astrophotography.transits.Tiphys.__init__.self.targets": {
+    "category": "KNOWLEDGE",
+    "canonical": "astrophotography.transits.Tiphys.__init__.self.targets",
+    "content": "Right now we have small, hand curated, list of celestial references. Really, this ought  to get loaded from a JSON file, with some kind of tool to support maintaing that by navigating the options within our almanac.",
+    "reference": "(64, 8)"
+  },
+  "astrophotography.transits.Tiphys.vantage": {
+    "category": "KNOWLEDGE",
+    "canonical": "astrophotography.transits.Tiphys.vantage",
+    "content": "From where we are looking",
+    "reference": "(107, 4)"
+  },
+  "astrophotography.transits.Tiphys.destination": {
+    "category": "MECHANISM",
+    "canonical": "astrophotography.transits.Tiphys.destination",
+    "content": "gives us a list of dicts of the things we want to observe. These things may either be planets (with their skyfield-internal id) or objects designated by ra/dec values.\n\nTiphys is a little surly in these regards, currently lettting us choose either all the planets, or **a** planet or single object. However, he supplies the info as a list, so with a little further care, we could provide for much richer queries.",
+    "reference": "(118, 4)"
+  },
+  "astrophotography.transits.Tiphys.HomeBase": {
+    "category": "MECHANISM",
+    "canonical": "astrophotography.transits.Tiphys.HomeBase",
+    "content": "Although ancient, Tiphys is fully up-to-date with GDPR type concerns. The vantage (home location) is hidden behind a buttton so it isn't captured by any screen grabs.\n\nThis could be quite lovely if it were to open a map-picker interface",
+    "reference": "(150, 4)"
+  },
+  "astrophotography.transits.Idmon": {
+    "category": "FIGURATION",
+    "canonical": "astrophotography.transits.Idmon",
+    "content": "Idmon was a seer for the Argonauts, in fact he foresaw his own death on the voyage but went along anyway...\n\nThis quest is a little easier for him, he consults the almanacs to tell us where things are on a given hour. \n\nHe always tracks the sun and the moon and informs us about the daylight, twilight and night-time bands for any given date; along with the moon-illumination at each hour of a given date.\n\nObvs, we also get the altitude data for observed objects on a (24) hourly basis for any given date.\n\nHe's kind of micro-managed, so if we want data for multiple days, or multiple target objects on a given date, he has to be re-consulted.",
+    "reference": "(181, 0)"
+  },
+  "astrophotography.transits.Idmon.__init__.self.loader": {
+    "category": "KNOWLEDGE",
+    "canonical": "astrophotography.transits.Idmon.__init__.self.loader",
+    "content": "this retrieves the almanac, which must have been downloaded",
+    "reference": "(191, 8)"
+  },
+  "astrophotography.transits.Idmon.set_transit": {
+    "category": "BEHAVIOUR",
+    "canonical": "astrophotography.transits.Idmon.set_transit",
+    "content": "Does the heavy-lifting needed to consult the almanac for a number of things on a given date. This takes account of the fact that the vantage point shifts (with respect to the heavens) over the course of a day due to the earth's rotation. \n\nNote that because the lunar arc is always available to the plot, **and** because we use the moon-illumination when plotting other arcs, Idmon provides those as soon as the heavy-lifting has been achieved.",
+    "reference": "(203, 4)"
+  },
+  "astrophotography.transits.Idmon.get_transit_arc": {
+    "category": "MECHANISM",
+    "canonical": "astrophotography.transits.Idmon.get_transit_arc",
+    "content": "Provides the altitude of a given target at each hour of the transit date; handles both planetary and star type targets.",
+    "reference": "(235, 4)"
+  },
+  "astrophotography.transits.Idmon.get_twilight_bands": {
+    "category": "MECHANISM",
+    "canonical": "astrophotography.transits.Idmon.get_twilight_bands",
+    "content": "Works out the daily event times, e.g. sunrise et al. on the transit date\n\nprovides a list of (9) start/end times-of-day periods consulting Kairos to prescribe the type of the time-period (day, night, etc...)\n\nWhilst it doesn't attemt to differentiate between dusks and dawns that is to our advantage because neither do we! All that matters to us is the daylight level: true night, astronomical twilight, nautical twilght, etc.. whichever end of the day we find those levels.\n\nLogically speaking we get 9 of these per day. We can cope with fewer (like we might see near the poles) but we have a deeply grounded faith that no day (24 hour period) will see the sun rise twice. I think that's reasonable.",
+    "reference": "(254, 4)"
+  },
+  "astrophotography.transits.Observatory": {
+    "category": "AFFORDANCE",
+    "canonical": "astrophotography.transits.Observatory",
+    "content": "On this quest everybody works within The Observatory.\n\nIt allows queries to be resolved on a day-by-day basis. Each of the attendants concentrate on a given day, as sequenced by the query presented.\n\nEach of the key players provide their own control panels: vantage and targets from Tiphys; date and range from Chronos; Various plot settings from Astreus.  The observatory itself presents the master control (the hosios - attending the prophet Idmon - button).",
+    "reference": "(296, 0)"
+  },
+  "astrophotography.transits.Observatory.present_query": {
+    "category": "BEHAVIOUR",
+    "canonical": "astrophotography.transits.Observatory.present_query",
+    "content": "THIS is the telos, the fulfillment of our destiny. \n\nSets up the specific observation requested then steps through the day range to marshal the skills of Idmon and Astraeus to build-up the results.\n\nFinally calling on Astraeus to complete the works and present the plot",
+    "reference": "(339, 4)"
+  },
+  "astrophotography.transits.main": {
+    "category": "BEHAVIOUR",
+    "canonical": "astrophotography.transits.main",
+    "content": "Powers-up the observatory and allows it to run until explicitly stopped by the user exiting the main app by mouse or keyboard.",
+    "reference": "(385, 0)"
+  }
+}
